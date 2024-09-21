@@ -1,0 +1,260 @@
+body{
+font-family: 'Montserrat',sans-serif;
+margin:0;
+background-color: black;
+color: white;
+overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+   
+
+}
+.sidebar{
+  background-color:black;  
+  width: 300px;
+  border-radius: 1rem;
+  margin-left: 0.5rem ;
+  margin-right: 0.5rem;
+}
+.main-content{
+    background-color: #121212;
+    border-radius: 1rem;/*16px*/
+    flex: 1;  /*iska mtlb hai ki jitna content jis div ne leliya usko chor ke baaki sab area muje dedo */
+overflow: auto;
+padding: 0rem 0rem 0rem 1rem;
+}
+.music-player{
+    background-color:black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+border-radius: 1rem;
+display: flex;
+height: 100px;
+justify-content: center;
+flex-direction: column ;
+padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+opacity: 0.7;
+padding: 0.5rem;
+}
+.nav-option:hover{
+ 
+opacity: 1 ;
+}
+.nav-option a{
+    font-size: 1rem;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.library{
+   margin-top:  0.5rem  ;
+    background-color: #121212;
+border-radius: 1rem;
+display: flex;
+height: 100vh;
+justify-content:flex-start; 
+flex-direction: column ;
+font-size: 1.5rem;
+padding: 0.5rem 0.75rem;
+
+flex: 1;
+
+}
+.options{
+display: flex;
+align-items: center;
+    padding: 4px 8px;
+    justify-content: space-between;
+}
+.boxes {
+
+    justify-content: flex-start;
+    font-size: 1rem;
+    background-color: #232323;
+    padding: 12px 0px 0px 11px  ;
+
+   
+margin-top: 3rem;
+    height: px;
+    border-radius: 1rem 1rem 0rem 0rem; 
+   
+}
+.boxes p{
+    margin-bottom: 5rem;
+}
+.badge{
+    justify-content: center;
+    border-radius: 1rem;
+    display: flex;
+    height:2rem;
+    border: 0cap;
+text-align: justify;
+padding: 0.25rem 1rem ;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+.stickynav{
+    position: sticky;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    padding: 1rem 0rem 0rem 1rem;
+    align-items: center;
+    background-color: #121212;
+    z-index: 10;
+}
+.login{
+    border: 0cap;
+    height:2rem;
+    text-align: justify;
+    padding: 0.25rem 1rem ;
+    padding-left:  1rem;
+    border-radius: 1rem;
+        font-weight: 700;
+
+}
+.sticky-nav-option a{
+    margin-left: 40rem;
+    position: sticky;
+    opacity: 0.7;
+}
+.sticky-nav-option a:hover{
+   
+    opacity: 1;
+}
+.stickynav-arrow img{
+    background-color: #000000B3;
+    border-radius: 100%  ;
+    opacity: 0.9;
+   
+    
+}
+@media(max-width:100px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+ width: 150px;
+ border-radius: 0.5rem;
+    background-color: #232323;
+    padding: 1rem;
+    margin: 1rem;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.card-info{
+    font-size: 0.75rem;
+}
+.footer{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width:90%;
+    height: 40%;
+    border-top: 1px solid white;
+    opacity:  0.4;
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mp-1{
+    width: 25%;
+
+}
+.player{
+    width: 50%;
+
+}
+.mp-3{
+    width: 25%;
+ 
+}
+
+.mp-img{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+   
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+}
+.mp-info{
+    color: aliceblue;
+    display: flex;
+ 
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-icon{
+height: 1rem;
+margin-right: 1.75rem;
+
+opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width:16px ;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.mp-3{
+    justify-content: space-between;
+    display: flex;
+}
